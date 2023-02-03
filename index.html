@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="module" src="https://unpkg.com/@qlik/sdk"></script>
+<script src="https://unpkg.com/enigma.js"></script>
+<script src="https://unpkg.com/@nebula.js/stardust"></script>
+<script src="https://unpkg.com/@nebula.js/sn-pie-chart"></script>
+<script type="module" src="/app.js"></script>
+
+    <title>Qlik Sense Single Page App</title>
+<style>
+
+  .object {
+    float: left;
+    display: inline-block;
+    height: 400px;
+    width: 50%;
+  }
+  #loading {
+    font-size: 40px;
+    display: none;
+  }
+</style>
+  </head>
+  <body>
+	  <h1>Welcome to Qliky Nebula Demo</h1>
+<h2>This demo is running with OAuth public client and using websockets</h2>
+<div id="login">
+  You are not logged in.
+  <button id="login_button">login with Qlik</button>
+</div>
+
+<div id="loading">Loading...</div>
+<div class="toolbar"></div>
+
+<!-- a pie object will be rendered here -->
+<div id="pie" class="object"></div>
+  </body>
+</html>
